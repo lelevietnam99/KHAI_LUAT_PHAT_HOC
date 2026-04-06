@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn thi Khái Luận Phật Học - Câu 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; 
+            --secondary-color: #8d6e63;
+            --accent-color: #d84315; 
+            --bg-color: #f5f5f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .intro-text {
+            background-color: #fff3e0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 30px;
+            text-align: justify;
+            font-size: 0.95em;
+        }
+
+        .intro-text strong {
+            color: #bf360c;
+        }
+
+        /* Style cho Accordion */
+        .accordion {
+            background-color: var(--card-bg);
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            outline: none;
+            font-size: 1.15em;
+            font-weight: 700;
+            font-family: 'Lora', serif;
+            transition: 0.3s;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .accordion:hover {
+            background-color: #efebe1;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 20px;
+            background-color: var(--card-bg);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 8px 8px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .panel-content {
+            padding: 20px 0;
+        }
+
+        .panel p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .panel ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .panel li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .term {
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-decoration-color: #ccc;
+            font-size: 1.05em;
+        }
+        
+        .quote {
+            background-color: #f9f6f0;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-color);
+            font-style: italic;
+            margin: 10px 0;
+            color: #555;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .summary-box {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #2e7d32;
+            margin-top: 30px;
+            text-align: justify;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .summary-box h3 {
+            color: #2e7d32;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Lora', serif;
+        }
+
+        /* Nút quay lại */
+        .back-nav {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px dashed #ccc;
+            padding-top: 25px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CÂU 4: Giải thích các khái niệm về duyên khởi</h1>
+
+    <div class="intro-text">
+        Theo sự phát triển của tư tưởng Phật giáo, từ giáo lý Duyên khởi căn bản, các bộ phái và Phật giáo Đại thừa đã phát triển thành <strong>4 quan điểm (dạng thức)</strong> mang tính triết lý sâu sắc để giải thích cặn kẽ về sự hình thành, vận hành của vũ trụ và vòng sinh tử luân hồi. Dưới đây là phần giải thích chi tiết về 4 khái niệm này:
+    </div>
+
+    <button class="accordion">1. Nghiệp cảm duyên khởi</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Đây là học thuyết nhằm miêu tả cách thức mà bánh xe sinh hóa (sinh tử luân hồi) hình thành và vận hành.</p>
+            <ul>
+                <li>Yếu tố cốt lõi của thuyết này là <span class="term">nghiệp cảm</span> – một năng lực tâm lý tiềm tàng vẫn tiếp tục tồn tại và chuyển hóa sau khi thân xác vật lý (ngũ uẩn) chết đi. Năng lượng tâm lý này đóng vai trò như một động lực dẫn dắt sự tái sinh vào các cảnh giới.</li>
+                <li>Cần lưu ý, nghiệp cảm hoàn toàn <strong>không phải là một "linh hồn" hay "tự ngã" bất biến</strong>, bởi vì nó bắt nguồn từ "tác ý" (Cetana) – vốn là một yếu tố vô thường, luôn luôn thay đổi theo duyên sinh.</li>
+                <li>Thuyết này khẳng định nguồn gốc trực tiếp của sinh tử luân hồi chính là từ <span class="keyword">nghiệp lực</span> của chúng sanh.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">2. A-lại-da duyên khởi</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Quan điểm này thuộc về <strong>Duy thức tông</strong>, được đưa ra nhằm giải thích căn nguyên của nghiệp cảm.</p>
+            <ul>
+                <li>Duy thức chia tâm thức con người thành 8 nhóm, trong đó thức thứ 8 là <span class="term">A-lại-da thức (Tàng thức)</span>.</li>
+                <li>A-lại-da là trung tâm tích tụ, là <strong>kho chứa tất cả các hạt giống (chủng tử)</strong> của mọi thiện ác và hiện hữu. Khi tiềm ẩn thì gọi là <em>chủng tử</em>, khi bộc lộ ra ngoài để hoạt động thì gọi là <em>hiện hành</em>.</li>
+                <li>Chính ý thể (hay thức) này là động lực tạo ra dòng vận chuyển của vạn pháp. Tuy nhiên, các nhà Duy thức cũng khẳng định bản thân A-lại-da cũng là duyên khởi (A-lại-da cũng do duyên mà sinh), chứ không phải là một đấng sáng thế hay thực thể độc lập tạo ra vạn vật.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">3. Chân như duyên khởi</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Học thuyết này tiến sâu hơn để giải thích căn nguyên của A-lại-da thức.</p>
+            <ul>
+                <li><span class="term">Chân như</span> (còn gọi là Như Lai tạng, Phật tánh) là thực tại cứu cánh, vượt ra ngoài mọi ngôn ngữ, định danh và suy nghĩ, suy lường.</li>
+                <li>Chân như hoạt động ở hai trạng thái:
+                    <ul>
+                        <li><span class="keyword">Mặt tĩnh:</span> Là tự thân của chân như (Phật tánh), mang tính phi không gian, phi thời gian, vô thủy vô chung.</li>
+                        <li><span class="keyword">Mặt động:</span> Là những biểu lộ của chân như trong vòng sống chết luân hồi.</li>
+                    </ul>
+                </li>
+                <li>Khi chân như được điều động bởi những nguyên nhân thuần tịnh, nó mang hình thái giải thoát, thanh thoát; ngược lại, khi bị điều động bởi nguyên nhân ô nhiễm (như vô minh, bất thiện), nó hiện hành thành sự hủ bại, tạo ra khổ đau trong vòng sinh tử.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">4. Pháp giới duyên khởi</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Đây là tư tưởng đỉnh cao của <strong>tông Hoa Nghiêm</strong>, bao trùm lên tất cả các thuyết trên. Thuyết này chủ trương rằng vạn vật trong vũ trụ (kể cả tâm và vật) đều đồng khởi, đồng hiện hữu và nương tựa lẫn nhau.</p>
+            <div class="quote">Triết lý cốt lõi: "Một là tất cả, tất cả là một"</div>
+            <p>Sự hiện hữu của vũ trụ (Pháp giới hiện tượng) được biểu hiện qua 4 khía cạnh:</p>
+            <ul>
+                <li><span class="keyword">Sự pháp giới:</span> Thế giới của các sự kiện, hiện tượng thực tế.</li>
+                <li><span class="keyword">Lý pháp giới:</span> Thế giới của những nguyên lý, lý tưởng.</li>
+                <li><span class="keyword">Lý sự vô ngại pháp giới:</span> Sự dung nhiếp hoàn hảo giữa nguyên lý và hiện tượng (trong lý có sự, trong sự có lý).</li>
+                <li><span class="keyword">Sự sự vô ngại pháp giới:</span> Các sự kiện, hiện tượng giao hòa, hỗ trợ và phụ thuộc lẫn nhau một cách tuyệt đối mà không hề có sự chướng ngại.</li>
+            </ul>
+            <p>Sự hòa điệu vĩ đại này đạt được dựa trên 10 lý do, tiêu biểu như: vạn vật đồng thời hiện khởi, chúng không có định tính nên tự do hòa điệu, và đặc biệt là sự hỗ tương phản chiếu lẫn nhau. Khía cạnh này giống như <span class="term">một vật được đặt giữa một căn phòng lót toàn gương</span> – sự vận động của một vật sẽ phản chiếu và ảnh hưởng đến tất cả các vật khác trong vũ trụ.</p>
+        </div>
+    </div>
+
+    <div class="summary-box">
+        <h3>📌 Tóm luận (Logic của 4 khái niệm)</h3>
+        <p>Bốn khái niệm này tạo thành một tiến trình giải thích triết học vô cùng logic của Phật giáo:</p>
+        <ul style="margin-top: 5px;">
+            <li>Nếu <strong>Nghiệp cảm duyên khởi</strong> miêu tả <em>cách</em> bánh xe sinh tử vận hành...</li>
+            <li>...thì <strong>A-lại-da duyên khởi</strong> tìm ra <em>nguồn gốc</em> của nghiệp cảm đó.</li>
+            <li>Tiếp nối, <strong>Chân như duyên khởi</strong> lại chỉ ra <em>gốc rễ sâu xa nhất</em> của A-lại-da.</li>
+            <li>Và cuối cùng, <strong>Pháp giới duyên khởi</strong> <em>bao trùm tất cả</em>, mô tả một vũ trụ nơi vạn pháp tương tức tương nhập, quyện hòa vào nhau không thể tách rời.</li>
+        </ul>
+    </div>
+
+    <div class="back-nav">
+        <a href="index.html" class="back-btn">⬅ Quay lại Đề Cương Khái Luận</a>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
+</body>
+</html>

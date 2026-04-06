@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn thi Khái Luận Phật Học - Câu 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; 
+            --secondary-color: #8d6e63;
+            --accent-color: #d84315; 
+            --bg-color: #f5f5f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .intro-text {
+            background-color: #fff3e0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 30px;
+            text-align: justify;
+            font-size: 0.95em;
+        }
+
+        .intro-text strong {
+            color: #bf360c;
+        }
+
+        /* Style cho Accordion */
+        .accordion {
+            background-color: var(--card-bg);
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            outline: none;
+            font-size: 1.15em;
+            font-weight: 700;
+            font-family: 'Lora', serif;
+            transition: 0.3s;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .accordion:hover {
+            background-color: #efebe1;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 20px;
+            background-color: var(--card-bg);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 8px 8px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .panel-content {
+            padding: 20px 0;
+        }
+
+        .panel p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .panel ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .panel li {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .term {
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-decoration-color: #ccc;
+            font-size: 1.05em;
+        }
+
+        /* Nút quay lại */
+        .back-nav {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px dashed #ccc;
+            padding-top: 25px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CÂU 2: Làm sao để tu tập giáo lý ngũ uẩn hay là ứng dụng giáo lý ngũ uẩn vào trong cuộc sống?</h1>
+
+    <div class="intro-text">
+        🎯 <strong>Chiến thuật ăn điểm:</strong> Để trả lời cho câu hỏi này theo đúng chuẩn mực của một bài thi tự luận đại học, bài viết cần được triển khai qua cấu trúc 4 phần: <strong>Định nghĩa (Đặt vấn đề), Phân tích (Pháp hành), Bình luận (Ứng dụng thực tiễn), và Kết luận</strong>.
+    </div>
+
+    <button class="accordion">I. Đặt vấn đề</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Học giáo lý ngũ uẩn không phải chỉ để nắm bắt kiến thức triết học suông hay nạp thêm thông tin, mà <strong>mục đích tối hậu là để hành trì và tu tập</strong>.</p>
+            <p>Tu tập giáo lý ngũ uẩn thực chất là con đường giải thoát con người khỏi sự trói buộc của nghiệp, giải thoát khỏi sự trói buộc và chấp thủ vào Sắc, Thọ, Tưởng, Hành, Thức.</p>
+        </div>
+    </div>
+
+    <button class="accordion">II. Phân tích: Phương pháp tu tập (Pháp hành)</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Để tu tập giáo lý ngũ uẩn, hành giả cần vận dụng thiền quán vào trong mọi sát-na của cuộc sống qua các phương pháp sau:</p>
+            <ul>
+                <li><span class="term">1. Thấy rõ sự nguy hiểm và bản chất vô ngã của ngũ uẩn</span>
+                    <p>Con người thường khổ đau vì vướng vào "thân kiến" – tức là đồng hóa bản thân với ngũ uẩn (cho rằng Sắc là tôi, Thọ là tôi...). Tu tập là phải quán sát sự nguy hiểm của mắt, tai, mũi, lưỡi, thân, ý (lục căn) và ngũ uẩn. Khi thấy được sự vô thường, biến hoại của ngũ uẩn, hành giả sẽ không còn ái trước, không bị trói buộc, không tham đắm, từ đó ngũ uẩn đi đến tạng diệt, đoạn trừ được sầu bi khổ não.</p>
+                </li>
+                <li><span class="term">2. Thực hành "Ba câu thần chú" đoạn trừ ngã chấp</span>
+                    <p>Trong sinh hoạt hằng ngày, khi đối mặt với bất kỳ sự việc nào gây ra cảm thọ buồn, vui, hay khi bị chê bai, xúc phạm, hành giả cần áp dụng ngay lời Đức Phật dạy bằng cách quán chiếu: <span class="keyword">"Cái này không phải là tôi, cái này không phải của tôi, cái này không phải tự ngã của tôi"</span>.</p>
+                    <p><em>Ví dụ:</em> Khi nổi sân, hãy quán "Sân này không phải là ta"; khi buồn, hãy quán "Cái buồn này không phải là ta". Việc tách rời tự ngã ra khỏi cảm thọ (Thọ uẩn) và nhận thức (Tưởng uẩn) sẽ giúp ta vượt qua sầu bi một cách dễ dàng, giữ được nụ cười và sự tự tại.</p>
+                </li>
+                <li><span class="term">3. Thiền quán Ngũ uẩn giai không qua lăng kính Kinh điển</span>
+                    <ul>
+                        <li><strong>Theo Kinh Pháp Cú:</strong> "Biết thân như bọt nước, ngộ thân là như huyễn" - Quán thân không thật để bẻ gãy mũi tên của ma vương và vượt qua tầm mắt thần chết.</li>
+                        <li><strong>Theo Kinh A Hàm và Hoa Nghiêm:</strong> Hành giả quán chiếu: "Quán sắc như bọt nước, thọ như bong bóng nước, tưởng y như sóng nắng, các hành như cây chuối và các thức là vô ngã".</li>
+                        <li><strong>Theo Kinh Kim Cang:</strong> Quán mọi pháp hữu vi (ngũ uẩn) đều "như mộng huyễn bào ảnh, như lộ diệc như điển".</li>
+                        <li><strong>Theo Bát Nhã Tâm Kinh:</strong> "Chiếu kiến ngũ uẩn giai không độ nhất thiết khổ ách". Mỗi lần tụng Bát Nhã là một lần thực hành thiền quán để chặt đứt sự chấp thủ, thấy rõ ngũ uẩn là không, từ đó vượt qua mọi bể khổ.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">III. Bình luận: Ứng dụng vào đời sống thực tiễn</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Việc tu tập không chỉ diễn ra trên bồ đoàn mà phải đưa vào giáo dục và lối sống hằng ngày để kiến tạo một con người toàn diện:</p>
+            <ul>
+                <li><span class="term">1. Thay đổi thái độ sống, nhận thức sự cộng tồn (Duyên sinh)</span>
+                    <p>Ngũ uẩn không tồn tại độc lập. Sắc uẩn có "nội sắc" (cơ thể ta) và "ngoại sắc" (môi trường, thiên nhiên xung quanh); Thọ uẩn có "nội thọ" và "ngoại thọ". Ứng dụng vào cuộc sống là việc ý thức bảo vệ môi trường, bảo vệ ngoại sắc. Nếu tàn phá thiên nhiên bằng dục vọng ích kỷ, nội sắc (cơ thể) cũng sẽ mang bệnh tật. Hạnh phúc của ta gắn liền với hạnh phúc của người khác. Ta không thể sống hạnh phúc trên nỗi đau của đồng loại.</p>
+                </li>
+                <li><span class="term">2. Chế ngự thói quen tạo nghiệp và diệt trừ dục vọng</span>
+                    <p>Tu tập ngũ uẩn giúp ta thay đổi lăng kính phân biệt vùng miền, giới tính, giàu nghèo – những thứ vốn do "tưởng uẩn" và "hữu ngã" vẽ ra. Khi thấy các pháp là vô ngã, ta chế ngự được thói quen tạo nghiệp, dập tắt dục vọng, ích kỷ, sân hận và sự vơ vét.</p>
+                </li>
+                <li><span class="term">3. Khởi sinh lòng Từ bi và Trí tuệ</span>
+                    <p>Mục tiêu tối hậu của việc ứng dụng giáo lý ngũ uẩn là đào tạo ra con người đầy đủ Từ bi và Trí tuệ. Lòng từ bi của đạo Phật là tình thương vô điều kiện, không phân biệt, như ánh sáng mặt trời chiếu rọi khắp nơi. Nhờ quán chiếu vô ngã, ta phá bỏ được ranh giới giữa mình và người, mang lại nếp sống thanh tịnh, an lạc cho cả cá nhân và tập thể.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">IV. Kết luận</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Tóm lại, giáo lý ngũ uẩn không phải là những mảnh ghép lý thuyết khô khan mà là chìa khóa để thực hành giải thoát.</p>
+            <p>Ứng dụng giáo lý ngũ uẩn là luôn sống trong chánh niệm, liên tục quán sát sự vô thường, vô ngã của Sắc, Thọ, Tưởng, Hành, Thức. Khi thấu triệt được <strong>"ngũ uẩn giai không"</strong>, hành giả sẽ dứt bớt tham ái, đoạn tận sầu bi, tự tại trước khen chê, và sống một cuộc đời trọn vẹn với tinh thần vị tha, từ bi và trí tuệ sâu sắc.</p>
+        </div>
+    </div>
+
+    <div class="back-nav">
+        <a href="index.html" class="back-btn">⬅ Quay lại Đề Cương Khái Luận</a>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
+</body>
+</html>

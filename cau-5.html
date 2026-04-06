@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn thi Khái Luận Phật Học - Câu 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; 
+            --secondary-color: #8d6e63;
+            --accent-color: #d84315; 
+            --bg-color: #f5f5f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .intro-text {
+            background-color: #fff3e0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 30px;
+            text-align: justify;
+            font-size: 0.95em;
+        }
+
+        .intro-text strong {
+            color: #bf360c;
+        }
+
+        /* Style cho Accordion */
+        .accordion {
+            background-color: var(--card-bg);
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            outline: none;
+            font-size: 1.15em;
+            font-weight: 700;
+            font-family: 'Lora', serif;
+            transition: 0.3s;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .accordion:hover {
+            background-color: #efebe1;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 20px;
+            background-color: var(--card-bg);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 8px 8px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .panel-content {
+            padding: 20px 0;
+        }
+
+        .panel p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        .panel ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .panel li {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .term {
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: underline;
+            text-decoration-color: #ccc;
+            font-size: 1.05em;
+        }
+
+        .quote {
+            background-color: #f9f6f0;
+            padding: 10px 15px;
+            border-left: 4px solid var(--primary-color);
+            font-style: italic;
+            margin: 10px 0;
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* Nút quay lại */
+        .back-nav {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px dashed #ccc;
+            padding-top: 25px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CÂU 5: Tăng ni sinh hiểu gì về vô ngã? Tại sao là vô ngã?</h1>
+
+    <div class="intro-text">
+        🎯 <strong>Chiến thuật ăn điểm:</strong> Để đạt điểm tối đa cho câu hỏi này theo đúng phương pháp làm bài tự luận đại học mà Thầy giáo đã căn dặn, bạn cần triển khai bài viết qua 4 phần cấu trúc rõ ràng: <strong>Định nghĩa, Phân tích, Bình luận và Kết luận</strong>.
+    </div>
+
+    <button class="accordion">I. ĐỊNH NGHĨA: VÔ NGÃ LÀ GÌ?</button>
+    <div class="panel">
+        <div class="panel-content">
+            <ul>
+                <li><span class="term">Về mặt thuật ngữ:</span> Vô ngã (tiếng Pali: <em>Anatta</em>, tiếng Sanskrit: <em>Anatman</em>) là sự phủ nhận, từ chối sự tồn tại của một thực thể, một bản ngã hay một linh hồn trường cửu, bất biến đằng sau con người và vạn pháp.</li>
+                <li><span class="term">Sự khác biệt với ngoại đạo:</span> Hầu hết các tôn giáo khác đều chủ trương con người có một linh hồn (Tiểu ngã) tách biệt với đấng Sáng thế (Đại ngã) để làm chỗ nương tựa (tự vệ) và để luân hồi từ kiếp này sang kiếp khác (tự tồn). <strong>Tuy nhiên, Phật giáo là tôn giáo duy nhất hoàn toàn bác bỏ điều này.</strong> Đạo Phật khẳng định con người chỉ là sự kết hợp của năm nhóm (Ngũ uẩn: Sắc, Thọ, Tưởng, Hành, Thức) liên tục biến diệt vô thường, và tuyệt đối không có một bản thể trường tồn nào nằm ẩn đằng sau ngũ uẩn đó.</li>
+                <li>Giáo lý Vô ngã chính là <span class="keyword">hệ luận tất yếu</span> được rút ra từ giáo lý Duyên khởi và Ngũ uẩn.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">II. PHÂN TÍCH: TẠI SAO LÀ VÔ NGÃ? (4 Ý NGHĨA)</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Dựa trên kinh tạng Nguyên thủy, Đức Phật đã đưa ra 4 lập luận sắc bén để giải thích tại sao vạn pháp và con người lại là vô ngã:</p>
+            <ul>
+                <li><span class="term">1. Ý nghĩa thứ nhất: Không có sự hiện hữu độc lập (Hệ quả của Duyên sinh)</span>
+                    <p>Vô ngã có nghĩa là không có bất cứ một sự hiện hữu nào tồn tại một cách độc lập, riêng rẽ. Dựa trên nguyên lý Duyên khởi, mọi sự vật (kể cả Ngũ uẩn) đều tùy thuộc vào nhau mà sinh khởi và tồn tại (có sắc thì mới có danh, và ngược lại). Vì không có một pháp nào có thể tự mình tồn tại độc lập tách rời các duyên, nên nó không có một "thực thể riêng" (bản ngã). Vô ngã chính là <strong>hệ quả tự nhiên của Duyên sinh</strong>.</p>
+                </li>
+                <li><span class="term">2. Ý nghĩa thứ hai: Sự vô thường của các giác quan và cảm thọ</span>
+                    <p>Dựa vào kinh <em>Chachakka</em>, nếu ai xem "con mắt" hay "cái thấy" (nhãn thức), hoặc "cảm thọ" là tự ngã, thì lập trường đó là sai lầm và không đứng vững.</p>
+                    <p>Bởi vì, cái thấy hay cảm thọ là những yếu tố do duyên sinh (căn tiếp xúc với trần) và luôn luôn biến đổi vô thường (đang vui thành buồn, đang buồn thành vui). Nếu ta chấp nhận cảm thọ là cái ngã, ta buộc phải chấp nhận rằng "cái ngã của ta cũng liên tục thay đổi sinh diệt". Một thứ luôn thay đổi thì <strong>không thể gọi là bản ngã thường hằng bất biến được</strong>.</p>
+                </li>
+                <li><span class="term">3. Ý nghĩa thứ ba: Không có một "vật môi giới" hay "người cảm thọ" đằng sau sự việc</span>
+                    <p>Con người thường có khuynh hướng ảo tưởng rằng: đằng sau một việc làm thì có "người làm", đằng sau một cảm thọ (khổ/lạc) thì tách biệt ra có một "người đang cảm thọ" (được ví như một kẻ môi giới).</p>
+                    <p>Tuy nhiên, cảm thọ sinh ra hoàn toàn là hệ quả tất yếu do Căn, Trần và Xúc gặp nhau. Tuyệt đối <strong>không hề có một "con người" hay "linh hồn" nào tách rời độc lập</strong> khỏi tiến trình Căn - Trần - Xúc để đứng ra làm "kẻ cảm thọ". Cảm thọ và người là một tiến trình duyên sinh chứ không phải hai thực thể tách rời.</p>
+                </li>
+                <li><span class="term">4. Ý nghĩa thứ tư: Sự bất lực trong việc sai sử, làm chủ Ngũ uẩn</span>
+                    <p>Được rút ra từ cuộc tranh luận giữa Đức Phật và du sĩ <em>Saccaka</em>. Ngoại đạo Saccaka cho rằng ngũ uẩn chính là cái ngã tạo ra thiện ác.</p>
+                    <p>Để bác bỏ, Đức Phật lập luận: Một vị Vua đối với vương quốc của mình thì có toàn quyền sinh sát và sai sử thần dân. Tương tự, nếu Ngũ uẩn thực sự là "tự ngã của ta", là "của ta", thì ta phải có toàn quyền sai sử, điều khiển nó theo ý muốn.</p>
+                    <p><strong>Thực tế, ta hoàn toàn bất lực.</strong> Ta không thể ra lệnh cho sắc thân "đừng già đi, đừng nhăn nheo", không thể ra lệnh cho cảm thọ "chỉ được vui, không được buồn". Vì ta không thể làm chủ hay sai sử được ngũ uẩn, nên ngũ uẩn chắc chắn là vô ngã.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">III. BÌNH LUẬN</button>
+    <div class="panel">
+        <div class="panel-content">
+            <ul>
+                <li><span class="term">Vô ngã không đồng nghĩa với hư vô chủ nghĩa:</span> Khi Đạo Phật bác bỏ cái ngã, không có nghĩa là bác bỏ hoàn toàn sự tồn tại của con người. Phật giáo vẫn công nhận khái niệm con người dưới dạng một "nhân tính" (Puggala) – tức là một tổng thể của năm uẩn liên tục sinh diệt và thay đổi theo nguyên lý duyên sinh. Thứ bị loại bỏ chỉ là <strong>cái ảo tưởng về một "thực ngã bất biến"</strong> nằm ẩn giấu đằng sau nhân tính đó.</li>
+                <li><span class="term">Cội nguồn của khổ đau và chiến tranh:</span> Triết học Phật giáo chỉ ra rằng, mọi rắc rối, đau khổ trong đời sống cá nhân cho đến những cuộc chiến tranh giành giật tài nguyên giữa các quốc gia đều bắt nguồn từ thân kiến, từ ảo tưởng về cái "tôi" và "của tôi". Khi ảo tưởng "tôi là" được tháo gỡ, tham ái và ích kỷ cũng tự động sụp đổ.</li>
+                <li><span class="term">Nhận định của Học giả Edward Conze:</span> Vị học giả lỗi lạc này từng khẳng định: <em>"Giáo lý Vô ngã chính là sự cống hiến vĩ đại nhất của Phật giáo cho tư tưởng nhân loại, vĩ đại không kém gì việc người Ấn Độ phát minh ra "con số 0" cho toán học. Vạn pháp từ số 0 (Vô ngã) mà sinh ra và cũng trở về với nó."</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="accordion">IV. KẾT LUẬN</button>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Giáo lý Vô ngã không chỉ là một đỉnh cao của triết lý học thuật (được tóm gọn trong câu <span class="keyword">Sabbe Dhamma Anatta - Tất cả các pháp là vô ngã</span>), mà nó là phương pháp thực hành tu tập cốt tủy.</p>
+            <p>Mục đích của việc học Vô ngã là để hành giả ứng dụng vào đời sống, thường xuyên thiền quán trước mọi biến động của Sắc, Thọ, Tưởng, Hành, Thức bằng 3 câu thần chú:</p>
+            <div class="quote">"Cái này không phải là ta, cái này không phải của ta, cái này không phải tự ngã của ta"</div>
+            <p>Khi ánh sáng của tuệ giác chiếu rọi, thấu triệt <strong>"ngũ uẩn giai không"</strong>, hành giả sẽ phá vỡ được sự trói buộc của thân kiến, đạt được trạng thái tự tại giải thoát, Niết-bàn ngay trong hiện tại.</p>
+        </div>
+    </div>
+
+    <div class="back-nav">
+        <a href="index.html" class="back-btn">⬅ Quay lại Đề Cương Khái Luận</a>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
+</body>
+</html>
