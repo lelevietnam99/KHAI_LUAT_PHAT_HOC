@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Cương Ôn Thi Cuối Kì - Khái Luận Phật Học</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #5d4037; /* Màu nâu trầm ấm áp, tĩnh tại */
+            --secondary-color: #8d6e63;
+            --accent-color: #d84315; /* Màu cam đỏ tạo điểm nhấn */
+            --bg-color: #f5f5f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            border-top: 8px solid var(--primary-color);
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        /* --- KHUNG LƯU Ý QUAN TRỌNG --- */
+        .warning-box {
+            background-color: #fff3e0;
+            border-left: 6px solid var(--accent-color);
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(216, 67, 21, 0.1);
+        }
+
+        .warning-box h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-list {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .warning-list li {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .warning-list strong {
+            color: #bf360c;
+        }
+
+        /* --- DANH SÁCH CHỦ ĐỀ & CÂU HỎI --- */
+        .topic-section {
+            margin-bottom: 35px;
+        }
+
+        .topic-title {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .question-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .question-item {
+            margin-bottom: 15px;
+        }
+
+        .question-link {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px 20px;
+            background-color: #f9f6f0;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+            text-decoration: none;
+            color: #2c3e50;
+            font-size: 1.05em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .question-link:hover {
+            background-color: #efebe1;
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left-color: var(--primary-color);
+            color: var(--accent-color);
+        }
+
+        .question-number {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 15px;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+
+        .question-text {
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Đề Cương Ôn Thi Cuối Kì</h1>
+    <div class="subtitle">Môn: Khái Luận Phật Học</div>
+
+    <div class="warning-box">
+        <h2>💡 Lưu Ý Cực Kỳ Quan Trọng Từ Thầy Giáo</h2>
+        <ul class="warning-list">
+            <li><strong>Phạm vi bài thi:</strong> Chỉ tập trung vào 4 chủ đề cốt lõi: Ngũ uẩn, Duyên khởi, Vô ngã và Nghiệp.</li>
+            <li><strong>Chiến thuật làm bài:</strong> Thời gian thi 1h30 phút cho 2 câu. Hãy chia đều <strong>45 phút/câu</strong>. Không viết quá nhiều vào giấy nháp để tránh thiếu thời gian chép vào bài chính thức.</li>
+            <li><strong>Cấu trúc bài luận:</strong> Bắt buộc có 4 phần rõ ràng: <em>Định nghĩa, Phân tích, Bình luận và Kết luận</em>. Phần bình luận và kết luận mang đậm dấu ấn cá nhân là phần <strong>quan trọng nhất để lấy điểm cao</strong>. Khuyên dùng: Gạch dàn ý ra nháp trước để bài mạch lạc.</li>
+            <li><strong>Đọc thật kỹ đề:</strong> Các câu hỏi dưới đây chỉ là "bộ khung". Đề thi thực tế sẽ được diễn đạt mang tính triết lý sâu sắc hơn. Cần nắm bắt được "chìa khóa" của đề, tuyệt đối <strong>tránh học tủ và viết lạc đề</strong>.</li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2 class="topic-title"><span>🌿</span> Chủ đề 1: Ngũ Uẩn</h2>
+        <ul class="question-list">
+            <li class="question-item">
+                <a href="cau-1.html" class="question-link">
+                    <span class="question-number">Câu 1</span>
+                    <span class="question-text">Tăng ni sinh hiểu gì về ngũ uẩn hay ngũ uẩn là gì?</span>
+                </a>
+            </li>
+            <li class="question-item">
+                <a href="cau-2.html" class="question-link">
+                    <span class="question-number">Câu 2</span>
+                    <span class="question-text">Làm sao để tu tập giáo lý ngũ uẩn hay là ứng dụng giáo lý ngũ uẩn vào trong cuộc sống?</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2 class="topic-title"><span>🔄</span> Chủ đề 2: Duyên Khởi</h2>
+        <ul class="question-list">
+            <li class="question-item">
+                <a href="cau-3.html" class="question-link">
+                    <span class="question-number">Câu 3</span>
+                    <span class="question-text">Thế nào gọi là duyên khởi hay duyên khởi là gì?</span>
+                </a>
+            </li>
+            <li class="question-item">
+                <a href="cau-4.html" class="question-link">
+                    <span class="question-number">Câu 4</span>
+                    <span class="question-text">Giải thích các khái niệm về duyên khởi (Bao gồm 4 khái niệm: Nghiệp cảm duyên khởi, A-lại-da duyên khởi, Chân như duyên khởi và Pháp giới duyên khởi).</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2 class="topic-title"><span>🌫️</span> Chủ đề 3: Vô Ngã</h2>
+        <ul class="question-list">
+            <li class="question-item">
+                <a href="cau-5.html" class="question-link">
+                    <span class="question-number">Câu 5</span>
+                    <span class="question-text">Tăng ni sinh hiểu gì về vô ngã? Tại sao là vô ngã (Yêu cầu giải thích dựa trên 4 ý nghĩa/định nghĩa của vô ngã)?</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="topic-section">
+        <h2 class="topic-title"><span>⚖️</span> Chủ đề 4: Nghiệp</h2>
+        <ul class="question-list">
+            <li class="question-item">
+                <a href="cau-6.html" class="question-link">
+                    <span class="question-number">Câu 6</span>
+                    <span class="question-text">Nghiệp là gì? Hãy nói về những tính chất và sức mạnh của nghiệp.</span>
+                </a>
+            </li>
+            <li class="question-item">
+                <a href="cau-7.html" class="question-link">
+                    <span class="question-number">Câu 7</span>
+                    <span class="question-text">Phân tích chi tiết các loại nghiệp (Đặc biệt chú ý đến nghiệp theo sức mạnh và nghiệp theo công tác).</span>
+                </a>
+            </li>
+            <li class="question-item">
+                <a href="cau-8.html" class="question-link">
+                    <span class="question-number">Câu 8</span>
+                    <span class="question-text">Giải thích ý nghĩa của bài kinh Đại Nghiệp Phân Biệt và Tiểu Nghiệp Phân Biệt.</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
